@@ -3544,26 +3544,26 @@ public class ApexCli
   //Added IOT COMMANDS
   private class ConnectToIotApp implements Command
   {
+//
+//     @Override
+//     public void execute(String[] args, ConsoleReader reader) throws Exception
+//     {
+//       CommandSpec cs = null;
+//       String appid = args[1];
+//       if (iot) {
+//         LOG.debug("launched in iot dev mode by default");
+//         cs = iotcommands.get(args[0]);
+//       }
+//       LOG.debug("Connected to app " + appid);
+//       for (String s : Connect.apps) {
+//         if (s.contains(appid)) {
+//           System.out.println("Connected to app " + appid);
+//         } else {
+//           LOG.debug("App does not exist");
+//         }
 
-    @Override
-    public void execute(String[] args, ConsoleReader reader) throws Exception
-    {
-      CommandSpec cs = null;
-      String appid = args[1];
-      if (iot) {
-        LOG.debug("launched in iot dev mode by default");
-        cs = iotcommands.get(args[0]);
-      }
-      LOG.debug("Connected to app " + appid);
-      for (String s : Connect.apps) {
-        if (s.contains(appid)) {
-          System.out.println("Connected to app " + appid);
-        } else {
-          LOG.debug("App does not exist");
-        }
-
-      }
-    }
+//       }
+//     }
   }
 
   private class ListIotApp implements Command
