@@ -2316,21 +2316,7 @@ public class ApexCli
     }
 
   }
-
-//  private class killIotApp implements Command
-//  {
-//
-//    @Override
-//    public void execute(String[] args, ConsoleReader reader) throws Exception
-//    {
-//      if (args.length == 1) {
-//        if (currentApp == null) {
-//          throw new CliException("No application selected");
-//        }
-//      }
-//    }
-//  }
-
+  
   private class KillAppCommand implements Command
   {
     @Override
